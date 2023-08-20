@@ -1,6 +1,6 @@
 'use client'
-import { AvatarIcon } from '@/src/common'
-import { Search } from '@/src/lib/Icon'
+import { AvatarIcon } from '@/common'
+import { Search } from '@/lib/Icon'
 import Image from 'next/image'
 import React from 'react'
 
@@ -18,6 +18,7 @@ export const Header = (props: Props) => {
                     className='w-44 md:w-56 md:pb-0 object-contain'
                     priority={false}
                 />
+
                 <div className='flex items-center space-x-5 flex-1 justify-end w-full'>
                     <form action="" className='flex space-x-5 bg-white rounded-md p-2 shadow-md flex-1 md:flex-initial'>
                         <Search className='w-6 h-6 gray-400 self-center' />
