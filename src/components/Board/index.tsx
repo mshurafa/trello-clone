@@ -1,9 +1,18 @@
+import { DragDropContext, Droppable, } from 'react-beautiful-dnd';
 
 type Props = {}
 
 export const Board = (props: Props) => {
     return (
-        <div>Board</div>
+        <DragDropContext>
+            <Droppable droppableId='board' direction='horizontal' type='column'>
+                {(private) => (
+                    <div>
+                        
+                    </div>
+                )}
+            </Droppable>
+        </DragDropContext>
     )
 }
 
