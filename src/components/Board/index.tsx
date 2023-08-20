@@ -1,3 +1,4 @@
+'use client'
 import { DragDropContext, Droppable, } from 'react-beautiful-dnd';
 
 type Props = {}
@@ -8,7 +9,7 @@ export const Board = (props: Props) => {
             <Droppable droppableId='board' direction='horizontal' type='column'>
                 {(private) => (
                     <div>
-                        
+
                     </div>
                 )}
             </Droppable>
