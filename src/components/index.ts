@@ -1,3 +1,3 @@
-export * from "./Chat"
-export * from "./Board"
-export * from "./Columns"
+export * from "./chat"
+export * from "./board"
+export * from "./columns"

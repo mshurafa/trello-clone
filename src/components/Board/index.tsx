@@ -1,8 +1,8 @@
 'use client'
 import { useBoardStore } from '@/store/BoardStore';
-import { useEffect } from 'react';
-import { DragDropContext, DropResult, Droppable, } from 'react-beautiful-dnd';
-import { Columns } from '@/components';
+import { useEffect, useState } from 'react';
+import { DragDropContext, DropResult, Droppable } from 'react-beautiful-dnd';
+import { Column } from '@/components/columns';
 
 type Props = {}
 
@@ -29,8 +29,8 @@ export const Board = (props: Props) => {
                         {...provided.droppableProps}
                         ref={provided.innerRef}
                     >
-                        {Array.from(board?.columns?.entries())?.map(([typesId, column], index) => (
-                            <Columns
+                        {board && Array?.from(board?.columns?.entries())?.map(([typesId, column], index) => (
+                            <Column
                                 key={typesId}
                                 typesId={typesId}
                                 index={index}

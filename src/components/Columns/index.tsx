@@ -8,7 +8,7 @@ type Props = {
 
 }
 
-export const Columns = ({ typesId, todos, index }: Props) => {
+export const Column = ({ typesId, todos, index }: Props) => {
     return (
         <>
             <Draggable index={index} draggableId={typesId}>
@@ -31,4 +31,4 @@ export const Columns = ({ typesId, todos, index }: Props) => {
     )
 }
 
-export default Columns
+export default Column

@@ -4,10 +4,13 @@ import { create } from 'zustand'
 
 interface BoardState {
     board: Board,
-    getBoard: () => void
+    getBoard: () => Promise<void>
 }
 
+
+
 export const useBoardStore = create<BoardState>((set) => ({
+
     board: {
         columns: new Map<TypeColumn, Column>(),
     },
